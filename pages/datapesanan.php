@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../functions/functions.php';
-$dataproduk = query("SELECT pesanan.idproduk, produk.namaproduk, pesanan.tanggal, pesanan.hargajual, pesanan.jumlah, pesanan.total, produk.id FROM produk INNER JOIN pesanan ON produk.id=pesanan.idproduk");
+$dataproduk = query("SELECT pesanan.idproduk, produk.namaproduk, pesanan.tanggal, pesanan.hargajual, pesanan.total, produk.id FROM produk INNER JOIN pesanan ON produk.id=pesanan.idproduk");
 if (isset($_POST["Submit"])) {
   $idproduk = $_POST['idproduk'];
   $jumlah = $_POST['jumlah'];

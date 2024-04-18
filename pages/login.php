@@ -88,7 +88,6 @@
                   </form>
                 </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                 
                 </div>
               </div>
             </div>
